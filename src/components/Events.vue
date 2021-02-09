@@ -3,13 +3,21 @@
 <v-container>
     <v-app-bar app>
       <v-toolbar-title>
-        <v-img
-          src="../assets/img/usa-flag-circle-logo-vector-18915398 (1).jpg"
-          style="width: 50px; height: 30px"
+        <v-avatar
+          size="40"
+          color="red"
         >
-        </v-img>
+          <img src="../assets/img/usa-flag-circle-logo-vector-18915398.jpg" alt="alt">
+        </v-avatar>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-avatar
+        size="40"
+        color="red"
+        class="mr-2"
+      >
+        <img src="../assets/img/risa.jpg" alt="alt">
+      </v-avatar>
       <v-menu>
         <template v-slot:activator="{ on }">
           <v-btn v-on="on">
@@ -28,8 +36,8 @@
         </v-list>
       </v-menu>
     </v-app-bar>
+    
     <v-main>
-
       <v-container>
         <v-row>
           <v-col cols="8" md="4">
@@ -157,6 +165,7 @@
                       </v-card>
                     </v-col>
                   </v-row>
+                  
                 </slide>
 
                 <slide style="margin: 10px">
@@ -233,8 +242,10 @@
           
             </v-container>
           </div>
+
     </v-main>
   </v-container>
+  <alert></alert>
   </v-app>
 </template>
 
@@ -242,12 +253,16 @@
 <script>
 import { Hooper, Slide } from "hooper";
 import "hooper/dist/hooper.css";
+import alert from './alert.vue';
+
+
 
 export default {
   name: "App",
   components: {
     Hooper,
     Slide,
+    alert
   },
 };
 </script>

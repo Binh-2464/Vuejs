@@ -8,7 +8,9 @@ import Profile from './components/Profile.vue';
 import Register from './components/Register.vue';
 import Profile_1 from './components/Profile_1.vue';
 import Detail from './components/Detail.vue';
-
+import alert from './components/alert.vue';
+import Events_1 from './components/Events_1.vue';
+import Appbar from './views/Appbar.vue';
 const routes = [
     {
         path: "/Home",
@@ -42,6 +44,19 @@ const routes = [
         path: '/Detail',
         component: Detail
     },
+    {
+        path: '/alert',
+        component: alert
+    },
+    {
+        path: '/Events_1',
+        component: Events_1
+    },
+    {
+        path: '/Appbar',
+        component: Appbar
+    }
+    
 ];
 
 const router = new VueRouter(
