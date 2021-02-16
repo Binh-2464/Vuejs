@@ -63,18 +63,18 @@
             </div>
           </div>
 
-          <div class="block ma-1">
+          <div class="block ma-1" v-for="(item , index) in card_sc" :key="index.id">
             <v-card max-width="370px" height="200" class="pa-1">
               <v-img
-                src="../assets/img/233307.jpg"
+                :src="item.img"
                 height="10vh"
                 width="100%"></v-img>
-              <p class="caption ma-0">Sat, 20 Jan 2021, 17:00 - 22:00</p>
-              <h5>US Alumni Annual Gathering 2020</h5>
+              <p class="caption ma-0">{{item.time}}</p>
+              <h5>{{item.title}}</h5>
 
               <div class="mt-2">
-                <v-icon style="font-size: 15px" class="ma-0">mdi-radiobox-marked</v-icon>
-                <span style="font-size: 10px">Crowne Plaza Vientiane</span>
+                <v-icon style="font-size: 15px" class="ma-0">{{item.icon1}}</v-icon>
+                <span style="font-size: 10px">{{item.text1}}</span>
               </div>
 
               <div class="d-flex justify-end mb-2 mr-1 align-end" style="height:50px;">
@@ -85,103 +85,14 @@
                   outlined
                   class="mr-1"
                 >
-                <v-icon outlined> mdi-comment-edit</v-icon>Edit</v-btn>
+                <v-icon outlined> {{item.icon2}}</v-icon>{{item.text2}}</v-btn>
                 <v-btn small elevation="3" color="primary">
-                  <v-icon color="" style="font-size: 12px">mdi-map-marker</v-icon>
-                  <p class="ma-0" style="font-size: 11px">Check-in</p></v-btn>
+                  <v-icon color="" style="font-size: 12px">{{item.icon3}}</v-icon>
+                  <p class="ma-0" style="font-size: 11px">{{item.text3}}</p></v-btn>
               </div>
             </v-card>
           </div>
           
-          <div class="block ma-1">
-            <v-card max-width="370px" height="200" class="pa-1">
-              <v-img
-                src="../assets/img/233307.jpg"
-                height="10vh"
-                width="100%"></v-img>
-              <p class="caption ma-0">Sat, 20 Jan 2021, 17:00 - 22:00</p>
-              <h5>US Alumni Annual Gathering 2020</h5>
-
-              <div class="mt-2">
-                <v-icon style="font-size: 15px" class="ma-0">mdi-radiobox-marked</v-icon>
-                <span style="font-size: 10px">Crowne Plaza Vientiane</span>
-              </div>
-
-              <div class="d-flex justify-end mb-2 mr-1 align-end" style="height:50px;">
-                <v-btn
-                  small
-                  elevation="3"
-                  color="primary"
-                  outlined
-                  class="mr-1"
-                >
-                <v-icon outlined> mdi-comment-edit</v-icon>Edit</v-btn>
-                <v-btn small elevation="3" color="primary">
-                  <v-icon color="" style="font-size: 12px">mdi-map-marker</v-icon>
-                  <p class="ma-0" style="font-size: 11px">Check-in</p></v-btn>
-              </div>
-            </v-card>
-          </div>
-
-          <div class="block ma-1">
-            <v-card max-width="370px" height="200" class="pa-1">
-              <v-img
-                src="../assets/img/233307.jpg"
-                height="10vh"
-                width="100%"></v-img>
-              <p class="caption ma-0">Sat, 20 Jan 2021, 17:00 - 22:00</p>
-              <h5>US Alumni Annual Gathering 2020</h5>
-
-              <div class="mt-2">
-                <v-icon style="font-size: 15px" class="ma-0">mdi-radiobox-marked</v-icon>
-                <span style="font-size: 10px">Crowne Plaza Vientiane</span>
-              </div>
-
-              <div class="d-flex justify-end mb-2 mr-1 align-end" style="height:50px;">
-                <v-btn
-                  small
-                  elevation="3"
-                  color="primary"
-                  outlined
-                  class="mr-1"
-                >
-                <v-icon outlined> mdi-comment-edit</v-icon>Edit</v-btn>
-                <v-btn small elevation="3" color="primary">
-                  <v-icon color="" style="font-size: 12px">mdi-map-marker</v-icon>
-                  <p class="ma-0" style="font-size: 11px">Check-in</p></v-btn>
-              </div>
-            </v-card>
-          </div>
-
-          <div class="block ma-1">
-            <v-card width="370px" height="200" class="pa-1">
-              <v-img
-                src="../assets/img/233307.jpg"
-                height="10vh"
-                width="100%"></v-img>
-              <p class="caption ma-0">Sat, 20 Jan 2021, 17:00 - 22:00</p>
-              <h5>US Alumni Annual Gathering 2020</h5>
-
-              <div class="mt-2">
-                <v-icon style="font-size: 15px" class="ma-0">mdi-radiobox-marked</v-icon>
-                <span style="font-size: 10px">Crowne Plaza Vientiane</span>
-              </div>
-
-              <div class="d-flex justify-end mb-2 mr-1 align-end" style="height:50px;">
-                <v-btn
-                  small
-                  elevation="3"
-                  color="primary"
-                  outlined
-                  class="mr-1"
-                >
-                <v-icon outlined> mdi-comment-edit</v-icon>Edit</v-btn>
-                <v-btn small elevation="3" color="primary">
-                  <v-icon color="" style="font-size: 12px">mdi-map-marker</v-icon>
-                  <p class="ma-0" style="font-size: 11px">Check-in</p></v-btn>
-              </div>
-            </v-card>
-          </div>
         </div>
 
         <v-row class="mt-5">
@@ -242,6 +153,58 @@ export default {
   components: {
     Appbar,
   },
+  data(){
+    return{
+      // The content of scroll menu
+      card_sc:[
+        {
+          id:1,
+          img : require('../assets/img/233307.jpg'),
+          time: 'Sat, 20 Jan 2021, 17:00 - 22:00',
+          title: 'US Alumni Annual Gathering 2020',
+          icon1: 'mdi-radiobox-marked',
+          text1: 'Crowne Plaza Vientiane',
+          icon2 : 'mdi-comment-edit',
+          text2: 'Edit',
+          icon3: 'mdi-map-marker',
+          text3: 'Check-in'
+        },
+        {
+          id:2,
+          img : require('../assets/img/233307.jpg'),
+          time: 'Sat, 20 Jan 2021, 17:00 - 22:00',
+          title: 'US Alumni Annual Gathering 2020',
+          icon1: 'mdi-radiobox-marked',
+          text1: 'Crowne Plaza Vientiane',
+          icon2 : 'mdi-comment-edit',
+          icon3: 'mdi-map-marker',
+          text2: 'Check-in'
+        },
+        {
+          id:3,
+          img : require('../assets/img/233307.jpg'),
+          time: 'Sat, 20 Jan 2021, 17:00 - 22:00',
+          title: 'US Alumni Annual Gathering 2020',
+          icon1: 'mdi-radiobox-marked',
+          text1: 'Crowne Plaza Vientiane',
+          icon2 : 'mdi-comment-edit',
+          icon3: 'mdi-map-marker',
+          text2: 'Check-in'
+        },
+        {
+          id:4,
+          img : require('../assets/img/233307.jpg'),
+          time: 'Sat, 20 Jan 2021, 17:00 - 22:00',
+          title: 'US Alumni Annual Gathering 2020',
+          icon1: 'mdi-radiobox-marked',
+          text1: 'Crowne Plaza Vientiane',
+          icon2 : 'mdi-comment-edit',
+          icon3: 'mdi-map-marker',
+          text2: 'Check-in'
+        },
+      ]
+    }
+  }
 };
 </script>
 
