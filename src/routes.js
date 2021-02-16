@@ -11,6 +11,7 @@ import Detail from './components/Detail.vue';
 import alert from './components/alert.vue';
 import Events_1 from './components/Events_1.vue';
 import Appbar from './views/Appbar.vue';
+import test_data from './components/test_data.vue';
 const routes = [
     {
         path: "/Home",
@@ -55,6 +56,10 @@ const routes = [
     {
         path: '/Appbar',
         component: Appbar
+    },
+    {
+        path: '/test_data',
+        component: test_data,
     }
     
 ];

@@ -122,130 +122,111 @@
                 <h3>Attendess</h3>
                 <p>See all</p>
               </v-col>
-
-              <v-card class="ma-1">
-                <v-col cols="12" md="3" xs="3" sm="3">
-                  <v-avatar size="80">
-                    <img src="../assets/img/risa.jpg" alt="risa" />
-                  </v-avatar>
-                </v-col>
-               <p style="font-size:10px;" class="text-center ma-0">Lisa blackpink</p>
-               <div class="d-flex flex-column justify-center align-center">
-               <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
-               <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
-               </div>
-              </v-card>
-
-              <v-card class="ma-1">
-                <v-col cols="12" md="3" xs="3" sm="3">
-                  <v-avatar size="80">
-                    <img src="../assets/img/risa.jpg" alt="risa" />
-                  </v-avatar>
-                </v-col>
-               <p style="font-size:10px;" class="text-center ma-0">Lisa blackpink</p>
-               <div class="d-flex flex-column justify-center align-center">
-               <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
-               <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
-               </div>
-              </v-card>
-
-              <v-card class="ma-1">
-                <v-col cols="12" md="3" xs="3" sm="3">
-                  <v-avatar size="80">
-                    <img src="../assets/img/risa.jpg" alt="risa" />
-                  </v-avatar>
-                </v-col>
-               <p style="font-size:10px;" class="text-center ma-0">Lisa blackpink</p>
-               <div class="d-flex flex-column justify-center align-center">
-               <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
-               <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
-               </div>
-              </v-card>
-
-              <v-card class="ma-1">
-                <v-col cols="12" md="3" xs="3" sm="3">
-                  <v-avatar size="80">
-                    <img src="../assets/img/risa.jpg" alt="risa" />
-                  </v-avatar>
-                </v-col>
-               <p style="font-size:10px;" class="text-center ma-0">Lisa blackpink</p>
-               <div class="d-flex flex-column justify-center align-center">
-               <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
-               <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
-               </div>
-              </v-card>
             </v-row>
+            <!-- <v-card class="ma-1">
+                <v-col cols="12" md="3" xs="3" sm="3">
+                  <v-avatar size="80">
+                    <img src="../assets/img/risa.jpg" alt="risa" />
+                  </v-avatar>
+                </v-col>
+               <p style="font-size:10px;" class="text-center ma-0">Lisa blackpink</p>
+               <div class="d-flex flex-column justify-center align-center">
+               <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
+               <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
+               </div>
+              </v-card>
 
-            <!-- <v-row>
-            <v-col md="12" cols="12" xs="12" sm="12" class="d-flex justify-space-between">
-              <h3> Attendess</h3>
-              <p>See all</p>
-            </v-col>
-            <v-col>
-              <v-row class="d-flex justify-md-space-between">
-            
-            <v-card class="ma-2">
-              <v-col cols="3" md="3" sm="3" xs="3" >
-                <v-avatar
-                  size="68"
-                >
-                  <img src="../assets/img/risa.jpg">
-                </v-avatar>
-              </v-col>
-                 <p style="font-size:10px;" class="text-center mb-2">Lisa blackpink</p>
+              <v-card class="ma-1">
+                <v-col cols="12" md="3" xs="3" sm="3">
+                  <v-avatar size="80">
+                    <img src="../assets/img/risa.jpg" alt="risa" />
+                  </v-avatar>
+                </v-col>
+               <p style="font-size:10px;" class="text-center ma-0">Lisa blackpink</p>
                <div class="d-flex flex-column justify-center align-center">
                <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
                <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
                </div>
-             
-            </v-card>
-            
-            <v-card class="ma-2">
-              <v-col cols="3" md="3" sm="3" xs="3" >
-                <v-avatar
-                  size="68"
-                >
-                  <img src="../assets/img/risa.jpg">
-                </v-avatar>
-              </v-col>
-               <p style="font-size:10px;" class="text-center mb-2">Lisa blackpink</p>
-               <div class="d-flex flex-column justify-center align-center">
-               <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
-               <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
-               </div>
-            </v-card>
-            
-            <v-card class="ma-2">
-              <v-col cols="3" md="3" sm="3" xs="3" >
-                <v-avatar
-                  size="68" >
-                  <img src="../assets/img/risa.jpg">
-                </v-avatar>
-              </v-col>
-               <p style="font-size:10px;" class="text-center mb-2">Lisa blackpink</p>
-               <div class="d-flex flex-column justify-center align-center">
-               <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
-               <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
-               </div>
-            </v-card>
+              </v-card>
 
-            <v-card class="ma-2">
-              <v-col cols="3" md="3" sm="3" xs="3" >
-                <v-avatar
-                  size="68"
-                >
-                  <img src="../assets/img/risa.jpg">
-                </v-avatar>
-              </v-col>
-                <p style="font-size:10px;" class="text-center mb-2">Lisa blackpink</p>
+              <v-card class="ma-1">
+                <v-col cols="12" md="3" xs="3" sm="3">
+                  <v-avatar size="80">
+                    <img src="../assets/img/risa.jpg" alt="risa" />
+                  </v-avatar>
+                </v-col>
+               <p style="font-size:10px;" class="text-center ma-0">Lisa blackpink</p>
                <div class="d-flex flex-column justify-center align-center">
                <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
                <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
                </div>
-            </v-card>
-              </v-row>
-            </v-col>
-          </v-row>  -->
+              </v-card>
+
+              <v-card class="ma-1">
+                <v-col cols="12" md="3" xs="3" sm="3">
+                  <v-avatar size="80">
+                    <img src="../assets/img/risa.jpg" alt="risa" />
+                  </v-avatar>
+                </v-col>
+               <p style="font-size:10px;" class="text-center ma-0">Lisa blackpink</p>
+               <div class="d-flex flex-column justify-center align-center">
+               <p style="font-size:8px;" class="ma-0">YSELI, UGRAD</p>
+               <p style="font-size:8px;" class="">Humpherey, Fullbright</p>
+               </div>
+              </v-card> -->
+            <div class="scroll-menu">
+              <div class="ma-2">
+                <v-card
+                  max-width="250px"
+                  class="d-flex justify-center flex-column align-center pa-2">
+                  <v-avatar size="80" color="red" class="rounded-circle">
+                    <img src="../assets/img/risa.jpg" alt="alt" />
+                  </v-avatar>
+                  <p class="caption mb-2">Lisa Blackpink</p>
+                  <p class="caption ma-0">YSEALI , URGRAD</p>
+                  <p class="caption ma-0">Humphrey , Fullbright</p>
+                </v-card>
+              </div>
+
+              <div class="ma-2">
+                <v-card
+                  max-width="250px"
+                  class="d-flex justify-center flex-column align-center pa-2">
+                  <v-avatar size="80" color="red" class="rounded-circle">
+                    <img src="../assets/img/risa.jpg" alt="alt" />
+                  </v-avatar>
+                  <p class="caption mb-2">Lisa Blackpink</p>
+                  <p class="caption ma-0">YSEALI , URGRAD</p>
+                  <p class="caption ma-0">Humphrey , Fullbright</p>
+                </v-card>
+              </div>
+
+              <div class="ma-2">
+                <v-card
+                  max-width="250px"
+                  class="d-flex justify-center flex-column align-center pa-2">
+                  <v-avatar size="80" color="red" class="rounded-circle">
+                    <img src="../assets/img/risa.jpg" alt="alt" />
+                  </v-avatar>
+                  <p class="caption mb-2">Lisa Blackpink</p>
+                  <p class="caption ma-0">YSEALI , URGRAD</p>
+                  <p class="caption ma-0">Humphrey , Fullbright</p>
+                </v-card>
+              </div>
+              
+              <div class="ma-2">
+                <v-card
+                  max-width="250px"
+                  class="d-flex justify-center flex-column align-center pa-2">
+                  <v-avatar size="80" color="red" class="rounded-circle">
+                    <img src="../assets/img/risa.jpg" alt="alt" />
+                  </v-avatar>
+                  <p class="caption mb-2">Lisa Blackpink</p>
+                  <p class="caption ma-0">YSEALI , URGRAD</p>
+                  <p class="caption ma-0">Humphrey , Fullbright</p>
+                </v-card>
+              </div>
+            </div>
           </v-col>
           <!-- right side-->
           <v-col cols="" sm="4" md="4" xs="4">
@@ -264,4 +245,11 @@ export default {};
 </script>
 
 <style scoped>
+.scroll-menu{
+  overflow: auto;
+  white-space: nowrap;
+}
+.scroll-menu div {
+  display: inline-block;
+}
 </style>

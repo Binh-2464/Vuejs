@@ -316,7 +316,7 @@
                
                 <v-card>
               <v-img src="../assets/img/233307.jpg" height="10vh"></v-img>
-              <h5 class="mx-auto ">
+              <h5 class="ml-1">
                 Environ-man,Environmental Protextion Act by Youth
               </h5>
               <v-col cols="12" sm="12" md="12" xs="12" class="d-flex justify-space-between">
@@ -349,7 +349,7 @@
                
                 <v-card>
               <v-img src="../assets/img/233307.jpg" height="10vh"></v-img>
-              <h5 class="mx-auto my-auto">
+              <h5 class="ml-1 my-auto">
                 How a group of few Leaders lead hundreds to save the Earth  
               </h5>
               <v-col cols="12" sm="12" md="12" xs="12" class="d-flex justify-space-between">
