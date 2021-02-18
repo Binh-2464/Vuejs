@@ -19,6 +19,7 @@
                 </v-avatar>
               </v-col>
             </v-row>
+            
             <v-row>
               <v-col class="mx-auto mt-12">
                 <h3 class="">Lalisa Manoban (Lisa)</h3>
@@ -280,19 +281,17 @@
 
         <!-- Right side -->
         <v-col cols="12" sm="4" md="4">
-        
-            
-          <v-col cols="12" md="12" sm="12" xs="12">
-            <h3>Attending Events</h3>
+          <v-col cols="12" md="12" sm="12" xs="12" v-for="item in card_r1" :key="item.id">
+            <h3>{{item.title}}</h3>
             <v-card>
-              <v-img src="../assets/img/233307.jpg" height="10vh"></v-img>
-              <p class="caption ml-1">Fri, 27 Nov 2020 , 17:00-22:00</p>
+              <v-img :src="item.img" height="10vh"></v-img>
+              <p class="caption ml-1">{{item.time}}</p>
               <h5 class="ml-1">
-                US Alumni Thanks Giving with the US Ambassador of Laos
+                {{item.text_tt}}
               </h5>
               <div>
-                <v-icon style="font-size: 15px">mdi-map-marker-radius</v-icon>
-                <span class="caption">US Ambassador House</span>
+                <v-icon style="font-size: 15px">{{item.icon1}}</v-icon>
+                <span class="caption">{{item.text1}}</span>
               </div>
               <div class="d-flex justify-end">
                 <v-btn
@@ -301,28 +300,28 @@
                   color="primary"
                   outlined
                   class="mr-2 mb-1"
-                  >Going</v-btn>
+                  >{{item.btn}}</v-btn>
               </div>
             </v-card>
             <div class="caption d-flex justify-end align-end light-blue--text">
-              <p>See all</p>
+              <p>{{item.see}}</p>
             </div>
           </v-col>
 
-          <v-col cols="12" sm="12" md="12" xs="12" class="ma-0">
+          <v-col cols="12" sm="12" md="12" xs="12" class="ma-0" v-for="item in card_r2" :key="item.id">
             <v-row no-gutters>
               <v-col>
-                <h3>Projects</h3>
+                <h3>{{item.title}}</h3>
                
                 <v-card>
-              <v-img src="../assets/img/233307.jpg" height="10vh"></v-img>
+              <v-img :src="item.img" height="10vh"></v-img>
               <h5 class="ml-1">
-                Environ-man,Environmental Protextion Act by Youth
+                {{item.text_tt}}
               </h5>
               <v-col cols="12" sm="12" md="12" xs="12" class="d-flex justify-space-between">
                 <div>
-                <v-icon style="font-size: 15px">mdi-map-marker-radius</v-icon>
-                <span class="caption">04 November 2020</span>
+                <v-icon style="font-size: 15px">{{item.icon1}}</v-icon>
+                <span class="caption">{{item.text1}}</span>
               </div>
                <v-btn
                   small
@@ -330,56 +329,17 @@
                   color="primary"
                   outlined
                   class="mr-2 mb-1"
-                  >Going</v-btn>
+                  >{{item.btn}}</v-btn>
               </v-col>
             </v-card>
             <div class="caption d-flex justify-end align-end light-blue--text">
               <p>
-                See all
+                {{item.see}}
               </p>
             </div>
               </v-col>
             </v-row>
-          </v-col>
-
-           <v-col cols="12" sm="12" md="12" xs="12" class="ma-0">
-            <v-row no-gutters>
-              <v-col>
-                <h3>Projects</h3>
-               
-                <v-card>
-              <v-img src="../assets/img/233307.jpg" height="10vh"></v-img>
-              <h5 class="ml-1 my-auto">
-                How a group of few Leaders lead hundreds to save the Earth  
-              </h5>
-              <v-col cols="12" sm="12" md="12" xs="12" class="d-flex justify-space-between">
-                <div>
-                <v-icon style="font-size: 15px">mdi-map-marker-radius</v-icon>
-                <span class="caption">04 November 2020</span>
-              </div>
-               <v-btn
-                  small
-                  elevation=""
-                  color="primary"
-                  outlined
-                  class="mr-2 mb-1"
-                  >Going</v-btn>
-              </v-col>
-            </v-card>
-            <div class="caption d-flex justify-end align-end light-blue--text">
-              <p>
-                See all
-              </p>
-            </div>
-              </v-col>
-            </v-row>
-          </v-col>
-       
-
-
-
-
-          
+          </v-col>         
         </v-col>
       </v-row>
     </v-container>
@@ -392,6 +352,14 @@ export default {
   components: {
     Appbar,
   },
+  computed:{
+    card_r1(){
+      return this.$store.state.card_r1;
+    },
+    card_r2(){
+      return this.$store.state.card_r2;
+    }
+  }
 };
 </script>
 

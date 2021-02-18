@@ -37,13 +37,10 @@
                       <v-icon outlined> mdi-comment-edit</v-icon>Edit</v-btn
                     >
                     <v-btn small elevation="3" color="primary">
-                      <v-icon color="" style="font-size: 12px"
-                        >mdi-map-marker</v-icon
-                      >
+                      <v-icon color="" style="font-size: 12px">mdi-map-marker</v-icon>
                       <p class="ma-0" style="font-size: 11px">
                         Check-in
-                      </p></v-btn
-                    >
+                      </p></v-btn>
                   </div>
                 </v-col>
               </v-row>
@@ -92,8 +89,10 @@
               </div>
             </v-card>
           </div>
-          
         </div>
+
+
+
 
         <v-row class="mt-5">
           <v-col cols="12" sm="4" md="4">
@@ -153,56 +152,9 @@ export default {
   components: {
     Appbar,
   },
-  data(){
-    return{
-      // The content of scroll menu
-      card_sc:[
-        {
-          id:1,
-          img : require('../assets/img/233307.jpg'),
-          time: 'Sat, 20 Jan 2021, 17:00 - 22:00',
-          title: 'US Alumni Annual Gathering 2020',
-          icon1: 'mdi-radiobox-marked',
-          text1: 'Crowne Plaza Vientiane',
-          icon2 : 'mdi-comment-edit',
-          text2: 'Edit',
-          icon3: 'mdi-map-marker',
-          text3: 'Check-in'
-        },
-        {
-          id:2,
-          img : require('../assets/img/233307.jpg'),
-          time: 'Sat, 20 Jan 2021, 17:00 - 22:00',
-          title: 'US Alumni Annual Gathering 2020',
-          icon1: 'mdi-radiobox-marked',
-          text1: 'Crowne Plaza Vientiane',
-          icon2 : 'mdi-comment-edit',
-          icon3: 'mdi-map-marker',
-          text2: 'Check-in'
-        },
-        {
-          id:3,
-          img : require('../assets/img/233307.jpg'),
-          time: 'Sat, 20 Jan 2021, 17:00 - 22:00',
-          title: 'US Alumni Annual Gathering 2020',
-          icon1: 'mdi-radiobox-marked',
-          text1: 'Crowne Plaza Vientiane',
-          icon2 : 'mdi-comment-edit',
-          icon3: 'mdi-map-marker',
-          text2: 'Check-in'
-        },
-        {
-          id:4,
-          img : require('../assets/img/233307.jpg'),
-          time: 'Sat, 20 Jan 2021, 17:00 - 22:00',
-          title: 'US Alumni Annual Gathering 2020',
-          icon1: 'mdi-radiobox-marked',
-          text1: 'Crowne Plaza Vientiane',
-          icon2 : 'mdi-comment-edit',
-          icon3: 'mdi-map-marker',
-          text2: 'Check-in'
-        },
-      ]
+  computed:{
+    card_sc(){
+      return this.$store.state.card_sc;
     }
   }
 };

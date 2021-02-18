@@ -1,34 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title>
-        <v-img
-          src="../assets/img/usa-flag-circle-logo-vector-18915398 (1).jpg"
-          style="width: 50px; height: 30px"
-        >
-        </v-img>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-menu>
-        <template v-slot:activator="{}">
-          <v-icon>mdi-menu-down</v-icon>
-        </template>
-        <v-list>
-          <v-list-item>
-            <v-list-title> Log in </v-list-title>
-          </v-list-item>
-        </v-list>
-        <v-list>
-          <v-list-item>
-            <v-list-title> Log Out </v-list-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-    </v-app-bar>
+    <Appbar/>
     <v-main>
-      <br />
       <v-container>
-        <v-card class="mt-5 mx-auto">
+        <v-card class="mt-3 mx-auto">
           <v-row>
             <v-col cols="4">
               <v-card-title> Add Events</v-card-title>
@@ -38,7 +13,7 @@
               <v-card-text> Recive Registration </v-card-text>
             </v-col>
           </v-row>
-          <v-form>
+          <v-form v-model="valid">
             <v-container>
               <v-container>
                 <v-row>
@@ -104,15 +79,16 @@
                 </v-row>
                 <v-row  class=" d-flex justify-end">
                   <v-col cols="2">
-                    <v-btn block>Cancel</v-btn>
+                    <v-btn block medium color="primary" outlined>Cancel</v-btn>
                   </v-col>
                   <v-col cols="2">
-                    <v-btn block>Save</v-btn>
+                    <v-btn block medium color="primary" :disabled="!valid">Save</v-btn>
                   </v-col>
                 </v-row>
               </v-container>
             </v-container>
           </v-form>
+                
         </v-card>
       </v-container>
     </v-main>
@@ -122,14 +98,17 @@
 <script>
 import GoogleMap from '../components/GoogleMap.vue';
 import { VueEditor } from 'vue2-editor';
+import Appbar from '../views/Appbar.vue';
 export default {
   components: {
     VueEditor,
     GoogleMap,
+    Appbar  
   },
   data(){
     return{
       editor: "",
+      valid: true,
     }
   }
 };
