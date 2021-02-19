@@ -55,7 +55,38 @@ export default new Vuex.Store({
       ],
 
       //Profile data
-      card_r1:[
+      card_l1:[ // Left side
+        {
+          id:1,
+          text_tt: 'Global Undergraduate Exchange Program',
+          icon1: 'mdi-account-details',
+          text1: 'Old Dominion University',
+          icon2: 'mdi-radiobox-marked',
+          text2: 'NortFolk,VirGinia,US',
+          icon3: 'mdi-calendar-blank',
+          text3: '20 August 2018 , - 16 Dec 2020',
+        },  
+      ],
+      card_l2:[
+        {
+          id:1,
+          text_tt: 'YSEALI Some Program Spring',
+          icon1: 'mdi-radiobox-marked',
+          text1: 'New York, USA',
+          icon2: 'mdi-calendar-blank',
+          text2: '20 August 2018 , - 16 Dec 2020',
+
+        },
+        {
+          id:2,
+          text_tt: 'YSEALI Regional Spring',
+          icon1: 'mdi-radiobox-marked',
+          text1: 'Ho Chi Minh, VietNam',
+          icon2: 'mdi-calendar-blank',
+          text2: '20 August 2018 , - 16 Dec 2020',
+        },
+      ],
+      card_r1:[ //Right Side
         {
           id:1,
           title:"Attending Events",

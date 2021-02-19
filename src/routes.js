@@ -12,6 +12,7 @@ import alert from './components/alert.vue';
 import Events_1 from './components/Events_1.vue';
 import Appbar from './views/Appbar.vue';
 import test_data from './components/test_data.vue';
+import Profile_top from './views/Profile_top.vue';
 const routes = [
     {
         path: "/Home",
@@ -60,9 +61,14 @@ const routes = [
     {
         path: '/test_data',
         component: test_data,
+    },
+    {
+        path:'/Profile_top',
+        component: Profile_top,
     }
     
 ];
+
 
 const router = new VueRouter(
     {
