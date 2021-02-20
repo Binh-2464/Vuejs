@@ -65,26 +65,24 @@ export default new Vuex.Store({
           text2: 'NortFolk,VirGinia,US',
           icon3: 'mdi-calendar-blank',
           text3: '20 August 2018 , - 16 Dec 2020',
-        },  
-      ],
-      card_l2:[
-        {
-          id:1,
-          text_tt: 'YSEALI Some Program Spring',
-          icon1: 'mdi-radiobox-marked',
-          text1: 'New York, USA',
-          icon2: 'mdi-calendar-blank',
-          text2: '20 August 2018 , - 16 Dec 2020',
-
         },
         {
           id:2,
+          text_tt: 'YSEALI Some Program Spring',
+          icon1: 'mdi-radiobox-marked',
+          text1: 'New York, USA',
+          icon3: 'mdi-calendar-blank',
+          text3: '20 August 2018 , - 16 Dec 2020',
+
+        },
+        {
+          id:3,
           text_tt: 'YSEALI Regional Spring',
           icon1: 'mdi-radiobox-marked',
           text1: 'Ho Chi Minh, VietNam',
-          icon2: 'mdi-calendar-blank',
-          text2: '20 August 2018 , - 16 Dec 2020',
-        },
+          icon3: 'mdi-calendar-blank',
+          text3: '20 August 2018 , - 16 Dec 2020',
+        }, 
       ],
       card_r1:[ //Right Side
         {
@@ -100,6 +98,7 @@ export default new Vuex.Store({
 
         },  
       ],
+
       card_r2:[
         {
           id:1,
@@ -122,6 +121,11 @@ export default new Vuex.Store({
           see : 'See all'
         }
       ]
+  },
+  getters:{
+    get_Profile_id: (state) => (id) =>{
+      return state.card_l1.find(x => x.id ===id)
+    }
   },
   mutations: {
   },

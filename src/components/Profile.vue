@@ -93,24 +93,20 @@
               sm="5"
               md="4"
               xs="12"
-              class="order-5 d-flex flex-wrap order-sm-2"
-            >
-              <v-btn  elevation="" color="primary" block outlined medium >
-                + Add program</v-btn
-              >
+              class="order-5 d-flex flex-wrap order-sm-2">
+
+              <v-btn  elevation="" color="primary" block outlined medium >+ Add program</v-btn>
             </v-col>
+
             <v-col cols="12" sm="12" md="12" xs="12" class="order-2" v-for="(item , index) in card_l1" :key="index.id">
               <v-card>
-                <v-col>
-                  <h5>{{item.text_tt}}</h5>
-                </v-col>
+                <v-col> <h5>{{item.text_tt}}</h5> </v-col>
                 <v-col
                   cols="12"
                   sm="12"
                   md="12"
                   xs="12"
-                  class="d-flex justify-sm-space-between flex-column flex-sm-row"
-                >
+                  class="d-flex justify-sm-space-between flex-column flex-sm-row">                  
                   <div>
                     <v-icon color="" style="font-size: 15px" class="ma-0">{{item.icon1}}</v-icon>
                     <span style="font-size: 10px">{{item.text1}}</span>
@@ -124,31 +120,6 @@
                   <div>
                     <v-icon color="" style="font-size: 15px" class="ma-0">{{item.icon3}}</v-icon>
                     <span style="font-size: 10px" class="pr-2">{{item.text3}}</span>
-                  </div>
-                </v-col>
-              </v-card>
-            </v-col>
-
-            <v-col cols="12" sm="12" md="12" xs="12" class="order-3" v-for="(item , index) in card_l2" :key="index.id">
-              <v-card>
-                <v-col>
-                  <h5>{{item.text_tt}}</h5>
-                </v-col>
-                <v-col
-                  cols="12"
-                  sm="12"
-                  md="12"
-                  xs="12"
-                  class="d-flex justify-sm-space-between flex-column flex-sm-row"
-                >
-                  <div>
-                    <v-icon style="font-size: 15px" class="ma-0">{{item.icon1}}</v-icon>
-                    <span style="font-size: 10px">{{item.text1}}</span>
-                  </div>
-
-                  <div>
-                    <v-icon color="" style="font-size: 15px" class="ma-0">{{item.icon2}}</v-icon>
-                    <span style="font-size: 10px" class="pr-2">{{item.text2}}</span>
                   </div>
                 </v-col>
               </v-card>
@@ -173,8 +144,7 @@
                   sm="12"
                   md="12"
                   xs="12"
-                  class="d-flex justify-sm-space-between flex-column flex-sm-row"
-                >
+                  class="d-flex justify-sm-space-between flex-column flex-sm-row">
                   <div>
                     <v-icon color="" style="font-size: 15px" class="ma-0">mdi-account-details</v-icon>
                     <span style="font-size: 10px">Lao Brewery Co., Ltd</span>
@@ -183,12 +153,8 @@
                   </div>
 
                   <div>
-                    <v-icon color="" style="font-size: 15px" class="ma-0"
-                      >mdi-calendar-blank</v-icon
-                    >
-                    <span style="font-size: 10px" class="pr-2"
-                      >20 August 2018 , - 16 Dec 2020</span
-                    >
+                    <v-icon color="" style="font-size: 15px" class="ma-0">mdi-calendar-blank</v-icon>
+                    <span style="font-size: 10px" class="pr-2">20 August 2018 , - 16 Dec 2020</span>
                   </div>
                 </v-col>
               </v-card>
@@ -310,9 +276,6 @@ export default {
   computed:{
     card_l1(){
       return this.$store.state.card_l1;
-    },
-    card_l2(){
-      return this.$store.state.card_l2;
     },
     card_r1(){
       return this.$store.state.card_r1;
